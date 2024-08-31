@@ -5,7 +5,7 @@ pubDate: 2024-08-26
 description: "This is from the Book The Forerunner - Kahlil Gibran"
 author: "Jimbob"
 image:
-  url: "https://docs.astro.build/assets/rays.webp"
+  url: "/the_forerunner.jpg"
   alt: "The Astro logo on a dark background with rainbow rays."
 tags: ["astro", "Kahil Gibran", "learning in public", "Wisdom", "Forerunner"]
 ---

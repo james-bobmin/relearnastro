@@ -5,8 +5,8 @@ pubDate: 2024-08-26
 description: 'This is from the book "Ikigai - The Japanese Secret to Long and Happy Life." - '
 author: "Jimbob"
 image:
-  url: "https://docs.astro.build/assets/arc.webp"
-  alt: "The Astro logo on a dark background with a purple gradient arc."
+  url: "/pocket_thich_nhat_hanh.jpg"
+  alt: "The Pocket Thich Nhat Hanh"
 tags: ["astro", "Buddha", "learning in public", "Wisdom", "Thich Nhat Hanh"]
 ---
 
