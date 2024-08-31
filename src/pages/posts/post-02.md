@@ -1,6 +1,7 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "My Second Wisdom Retreival"
-pubDate: 2022-07-01
+pubDate: 2024-08-26
 description: 'This is from the book "Ikigai - The Japanese Secret to Long and Happy Life." - '
 author: "Jimbob"
 image:
@@ -8,10 +9,6 @@ image:
   alt: "The Astro logo on a dark background with a purple gradient arc."
 tags: ["astro", "Buddha", "learning in public", "Wisdom", "Thich Nhat Hanh"]
 ---
-
-# My Second Wisdom Retreival
-
-Published on: 2024-08-26
 
 ## This is from the Book: The Pocket Thich Nhat Hanh
 
