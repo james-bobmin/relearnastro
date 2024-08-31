@@ -34,7 +34,7 @@ Taking a hit or two can be viewed as either a misfortune or and experience that 
 As Taleb writes in the Antifragile, "We need randomness, adventures, uncertainty, self-discovery, hear traumatic episodes, all these things that make life worth living". We encourage those interested in the concept of antifragility to read Nassim Taleb's Antifragile.
 Life is pure in-perfection, as the philosophy of wabi-sabi teaches us, and the passage of time shows us that everything is fleeting, but if you have a clear sense of your Ikigai, each moment will hold so many possibilities that it will seem almost like an eternity.
 
-- Ikigai: The Japanese Secret to a Long and Happy Life - By Hector Garcia and Francesc Mirales
+-- Ikigai: The Japanese Secret to a Long and Happy Life - By Hector Garcia and Francesc Mirales
 
 ## What's next
 

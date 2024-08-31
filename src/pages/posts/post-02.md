@@ -20,4 +20,4 @@ When one tree in the garden is sick, you have to care for it. But don't overlook
 Even while you have pain in your heart you can enjoy the many wonders of life - the beautiful sunset, the smile of a child, the many flowers and trees.
 To suffer is not enough. Please don't be imprisoned by your suffering.
 
-- The Pocket Thich Nhat Hanh
+-- The Pocket Thich Nhat Hanh

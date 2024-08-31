@@ -4,6 +4,12 @@ html {
   color: #e1e4e8;
 }
 
+.hyper:hover a {
+  color: #e99292;
+}
+.hyper:hover {
+  background: #434c56;
+}
 a {
   color: inherit;
   text-decoration: none;
