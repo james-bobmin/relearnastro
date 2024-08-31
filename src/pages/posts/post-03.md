@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "A little more Wisdom"
+title: "The Forerunner"
 pubDate: 2024-08-26
 description: "This is from the Book The Forerunner - Kahlil Gibran"
 author: "Jimbob"
 image:
   url: "/the_forerunner.jpg"
   alt: "The Astro logo on a dark background with rainbow rays."
-tags: ["astro", "Kahil Gibran", "learning in public", "Wisdom", "Forerunner"]
+tags: ["astro", "kahil gibran", "learning in public", "wisdom", "forerunner"]
 ---
 
 ## This is from the Book: The Forerunner - page 39

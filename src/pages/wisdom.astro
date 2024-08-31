@@ -1,5 +1,7 @@
 ---
+import WisdomPost from '../components/WisdomPost.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+const allPosts = await Astro.glob('./posts/*.md');
 const pageTitle = "Snips of Wisdom";
 ---
 <BaseLayout pageTitle={pageTitle}>
@@ -10,11 +12,7 @@ const pageTitle = "Snips of Wisdom";
     
     <h2>... Bits and peices I have connected with</h2>
     <ul>
-      <li><div class="hyper"><a href="/posts/post-01/">Ikigai: Get rid of the things that make you fragile</a></li></div>
-      <li><div class="hyper"><a href="/posts/post-02/">The Pocket Thich Nhat Hanh: The Buddha</a></li></div>
-      <li><div class="hyper"><a href="/posts/post-03/">The Forerunner: SAID A SHEET OF SNOW-WHITE PAPER . . .</a></li></div>
-      <li><div class="hyper"><a href="/posts/post-04/">WABI SABI: Japanese Wisdom For a Perfectly Imperfect Life</a></li></div>
-      <li><div class="hyper"><a href="/posts/post-05/">The Qabalah: ﻿Two Great Challenges</a></li></div>
+      {allPosts.map((post) => <WisdomPost url={post.url} title={post.frontmatter.title} />)}
     </ul>
  
   </BaseLayout>

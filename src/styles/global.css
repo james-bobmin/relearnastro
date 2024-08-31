@@ -4,10 +4,10 @@ html {
   color: #e1e4e8;
 }
 
-.hyper:hover a {
+li:hover a {
   color: #e99292;
 }
-.hyper:hover {
+li:hover {
   background: #434c56;
 }
 a {

@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "My Second Wisdom Retreival"
+title: "My Second Wisdom Retreival - Thich Nhat Hanh"
 pubDate: 2024-08-26
-description: 'This is from the book "Ikigai - The Japanese Secret to Long and Happy Life." - '
+description: 'This is from the book "The Pocket Thich Nhat Hanh"'
 author: "Jimbob"
 image:
   url: "/pocket_thich_nhat_hanh.jpg"
   alt: "The Pocket Thich Nhat Hanh"
-tags: ["astro", "Buddha", "learning in public", "Wisdom", "Thich Nhat Hanh"]
+tags: ["astro", "buddha", "learning in public", "wisdom", "thich nhat hanh"]
 ---
 
 ## This is from the Book: The Pocket Thich Nhat Hanh

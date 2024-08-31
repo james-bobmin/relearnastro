@@ -1,18 +1,18 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "My First Wisdom Extraction"
+title: "My First Wisdom Extraction - Ikigai"
 pubDate: 2024-08-26
 description: 'This is from the book "Ikigai - The Japanese Secret to Long and Happy Life." '
 author: "Jimbob"
 image:
   url: "/ikigai_japanese_secret_to_a_joyful_life_pic.webp"
   alt: "The Astro logo on a dark background with a pink glow."
-tags: ["astro", "Ikigai", "learning in public", "Wisdom", "Japan"]
+tags: ["astro", "ikigai", "learning in public", "wisdom", "japan"]
 ---
 
 Welcome to my _new Collection of Wisdom_. Here, I will share my learning journey as I build a new foundation.
 
-## This is from the Book: Ikigai - The Japanese Secret to a Long and Happy life - Chapter IX: Resilience and Wabi-Sabi, page 178
+## Chapter IX: Resilience and Wabi-Sabi, page 178
 
 ## Step 3: Get rid of the things that make you fragile
 

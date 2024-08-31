@@ -7,7 +7,7 @@ author: "Jimbob"
 image:
   url: "/2024-08-31_16-41-55qabalah.jpg"
   alt: "The Qabalah"
-tags: ["astro", "Qabalah", "learning in public", "Wisdom", "Kabbalah"]
+tags: ["astro", "qabalah", "learning in public", "wisdom", "kabbalah"]
 ---
 
 ## Two Great Challenges
