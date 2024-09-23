@@ -1,36 +1,32 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import WisdomPost from '../../components/WisdomPost.astro';
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob('../posts/*.md');
-  return [
-    { params: { tag: "astro" } },
-    { params: { tag: "successes" } },
-    { params: { tag: "community" } },
-    { params: { tag: "blogging" } },
-    { params: { tag: "setbacks" } },
-    { params: { tag: "learning in public" } },
-    { params: { tag: "buddha" } },
-    { params: { tag: "wabi sabi" } },
-    { params: { tag: "ikigai" } },
-    { params: { tag: "japan" } },
-    { params: { tag: "forerunner" } },
-    { params: { tag: "beth kempton" } },
-    { params: { tag: "thich nhat hanh" } },
-    { params: { tag: "qabalah" } },
-    { params: { tag: "kabbalah" } },
-    { params: { tag: "kahlil gibran" } },
-    
-  ];
+  const allPosts: { frontmatter: { tags: string[], title: string }, url: string }[] = (await Astro.glob('../posts/*.md')).map(post => ({
+    frontmatter: { tags: post.frontmatter.tags || [], title: post.frontmatter.title || 'Untitled' },
+    url: post.url || ''
+  }));
+
+  const uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+
+  const paths = uniqueTags.map((tag) => ({
+    params: { tag },
+    props: { posts: allPosts.filter((post) => post.frontmatter.tags.includes(tag)) },
+  }));
+
+  console.log('Generated paths:', paths); // Add logging to debug
+
+  return paths;
 }
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
-const filteredPosts = posts.filter((post: { frontmatter: { tags: string | string[]; }; }) => post.frontmatter.tags?.includes(tag));
 ---
+
 <BaseLayout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   <ul>
-    {filteredPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title}/>)}
+    {posts.map((post) => <WisdomPost url={post.url} title={post.frontmatter.title} />)}
   </ul>
 </BaseLayout>

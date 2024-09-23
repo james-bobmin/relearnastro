@@ -7,7 +7,7 @@ author: "Jimbob"
 image:
   url: "/ikigai_japanese_secret_to_a_joyful_life_pic.webp"
   alt: "The Astro logo on a dark background with a pink glow."
-tags: ["astro", "ikigai", "learning in public", "wisdom", "japan"]
+tags: ["astro", "community", "ikigai", "learning in public", "wisdom", "japan"]
 ---
 
 Welcome to my _new Collection of Wisdom_. Here, I will share my learning journey as I build a new foundation.
