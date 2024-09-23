@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
+    "@astrojs/netlify": "^5.5.3",
+    "@astrojs/rss": "^4.0.7",
     "astro": "^4.15.8"
   },
   "description": "```sh\r npm create astro@latest -- --template basics\r ```",
