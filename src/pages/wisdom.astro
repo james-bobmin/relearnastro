@@ -1,20 +1,18 @@
 ---
-import WisdomPost from '../components/WisdomPost.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-const allPosts = await Astro.glob('./posts/*.md');
+import WisdomPost from "../components/WisdomPost.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const allPosts = await Astro.glob("./posts/*.md");
 const pageTitle = "Snips of Wisdom";
-
-interface Post {
-  url: string;
-  frontmatter: {
-    title: string;
-  };
-}
 ---
+
 <BaseLayout pageTitle={pageTitle}>
-  <h1>{ pageTitle }</h1>
+  <h1>{pageTitle}</h1>
   <h2>... Bits and pieces I have connected with</h2>
   <ul>
-    {allPosts.map((post: Post) => <WisdomPost url={post.url} title={post.frontmatter.title} />)}
+    {
+      allPosts.map((post) => (
+        <WisdomPost url={post.url} title={post.frontmatter.title} />
+      ))
+    }
   </ul>
 </BaseLayout>

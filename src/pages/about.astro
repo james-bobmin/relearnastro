@@ -1,52 +1,69 @@
-
 ---
-
-import '../styles/global.css';
+import "../styles/global.css";
 const pageTitle = "What are you on about?";
-import BaseLayout from '../layouts/BaseLayout.astro';
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const identity = {
-    firstName: "James",
-    country: "Australia",
-    occupation: "Student",
-    hobbies: ["photography", "walking", "gaming"],
-  };
-  
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs", "Help Desk", "Customer Service"];
+  firstName: "James",
+  country: "Australia",
+  occupation: "Student",
+  hobbies: ["photography", "walking", "gaming"],
+};
+
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Astro",
+  "Writing Docs",
+  "Help Desk",
+  "Customer Service",
+];
 const happy = true;
 const finished = false;
 const goal = 3;
 
-const skillColor = "green";
-const fontWeight = "bold";
-const textCase = "uppercase";
+// const skillColor = "green";
+// const fontWeight = "bold";
+// const textCase = "uppercase";
 ---
+
 <BaseLayout pageTitle={pageTitle}>
+  <h1>{pageTitle}</h1>
+  <h2>Just let me re-learn the Astro webs!</h2>
 
-    <h1>{pageTitle}</h1>
-    <h2>Just let me re-learn the Astro webs!</h2>
+  <p>Time to do something contructive.</p>
 
-    <p>Time to do something contructive.</p>
-  
-    <p>This site will update as I complete more of my brain transplant, so keep checking back and see how my journey is going!</p>
-    <p>Here are a few facts about me:</p>
-    <ul>
-      <li>My name is {identity.firstName}.</li>
-      <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-      {identity.hobbies.length >= 2 &&
-        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-      }
-    </ul>
-    {happy && <p>I am happy to be learning Astro!</p>}
+  <p>
+    This site will update as I complete more of my brain transplant, so keep
+    checking back and see how my journey is going!
+  </p>
+  <p>Here are a few facts about me:</p>
+  <ul>
+    <li>My name is {identity.firstName}.</li>
+    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+    {
+      identity.hobbies.length >= 2 && (
+        <li>
+          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
+        </li>
+      )
+    }
+  </ul>
+  {happy && <p>I am happy to be learning Astro!</p>}
 
-{finished && <p>I finished this tutorial!</p>}
+  {finished && <p>I finished this tutorial!</p>}
 
-{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-<p>My skills are:</p>
-<ul>
-  {skills.map((skill) => <li class="skill">{skill}</li>)}
-</ul>
+  {
+    goal === 3 ? (
+      <p>My goal is to finish in 3 days.</p>
+    ) : (
+      <p>My goal is not 3 days.</p>
+    )
+  }
+  <p>My skills are:</p>
+  <ul>
+    {skills.map((skill) => <li class="skill">{skill}</li>)}
+  </ul>
 </BaseLayout>
- 
-
